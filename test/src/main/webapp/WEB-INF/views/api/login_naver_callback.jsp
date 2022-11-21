@@ -36,16 +36,12 @@
 					const h_name = document.getElementById("name"); // 이름
 					const h_gender = document.getElementById("gender"); // 성별
 					const h_email = document.getElementById("email"); // 이메일
-					// naver API 필수정보값들 JSON타입 --> String타입 변환
-					let s_name = naverLogin.user.name; // 이름
-					let s_gender = naverLogin.user.gender; // 성별
-					let s_email = naverLogin.user.email; // 이메일
 					// input value에 naver API 필수정보값 넣기
-					h_name.value = s_name; // 이름
-					h_gender.value = s_gender; // 성별
-					h_email.value = s_email; // 이메일
+					h_name.value = name; // 이름
+					h_gender.value = gender; // 성별
+					h_email.value = email; // 이메일
 					// 다음 인증페이지 이동
-					ff.action = "login_authentication.do";
+					ff.action = "login_authentication.do"; // 가입자와 비가입자를 가리는곳
 					ff.method = "POST";
 					ff.submit();
 				} else {

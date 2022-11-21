@@ -8,11 +8,11 @@
 </head>
 <body>
 	<form>
-		<input name="name" type="hidden" value="${ vo.name }"> <br>
 		<input name="id" type="hidden" value="${ vo.id }"> <br>
-		<input name="pwd" type="hidden" value="${ vo.pwd }"> <br>
+		<input name="pwd" type="hidden" value="kakao"> <br>
 		<input name="gender" type="hidden" value="${ vo.gender }"> <br>
 		<input name="email" type="hidden" value="${ vo.email }"> <br>
+		<label>이름 : </label><input name="name" type="text"> <br>
 		<label>주소 : </label><input name="address" class="address_kakao" type="text">
 		<input class="address_kakao" type="button" value="주소찾기"> <br>
 		<label>상세 주소 : </label><input name="address_detail" class="address_kakao" type="text"> <br>

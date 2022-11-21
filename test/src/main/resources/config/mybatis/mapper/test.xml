@@ -20,6 +20,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</insert>
 	<!-- 네이버 로그인 API -->
 	<select id="select1" resultType="test" parameterType="test">
-		select * from test where email=#{email} and id='naver'
+		select * from test where email=#{email} and id=#{id}
 	</select>
 </mapper>

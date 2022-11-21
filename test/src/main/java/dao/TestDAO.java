@@ -15,8 +15,8 @@ public class TestDAO {
 		return res;
 	}
 	
-	public TestVO selectEmail(String email) {
-		TestVO vo = sqlSession.selectOne("t.select1", email);
-		return vo;
+	public TestVO selectEmail(TestVO vo) {
+		TestVO vo1 = sqlSession.selectOne("t.select1", vo);
+		return vo1;
 	}
 }
